@@ -31,7 +31,7 @@ bool add_word(std::vector<Word> &ws, std::string w, int l){
 //the function also negates punction and keeps track of the line number a word was found on
 void reader(std::string file, std::vector<Word> &w) {
   std::ifstream ifs;
-  ifs.open (file);
+  ifs.open(file.c_str());
   std::string word;
   int line_count = 1;
   while (ifs.good()) {
